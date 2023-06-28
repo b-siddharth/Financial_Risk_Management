@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Risk Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link rel="stylesheet" href="../static/css/main.css">
+    <script src="https://kit.fontawesome.com/9fe93f881e.js" crossorigin="anonymous"></script>
+    <style>
+        .bg-blue{
+            background: #00607e8c!important;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper bg-blue p-100">
+        <div class="wrapper">
+            <div class="card">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="tittle">Financial Risk Assessment</h2>
+                    <form action="/risk" method="post">
+                        <div class="row">
+                            <div class="col-2 first">
+                                    <div class="rs-select2">
+                                        <select name="gender" id="">
+                                            <option disabled="disabled" selected="selected">Gender</option>
+                                            <option value="f">Female</option>
+                                            <option value="m">Male</option>
+                                        </select>
+                                        <select class="right" name="job" id="">
+                                            <option disabled="disabled" selected="selected" value="">Choose Employment Type</option>
+                                            <option value="un">Unskilled / Non-Resisdent</option>
+                                            <option value="ur">Unskilled / Resisdent</option>
+                                            <option value="sk">Skilled</option>
+                                            <option value="hs">Highly Skilled</option>
+                                        </select>
+                                    </div>
+                            </div>
+                            <div class="col-2 second">
+                                <div class="rs-select2">
+                                    <select name="saving" id="">
+                                        <option disabled="disabled" selected="selected" value="">Choose Saving Type</option>
+                                        <option value="l">Little</option>
+                                        <option value="m">Moderate</option>
+                                        <option value="qr">Quite Rich</option>
+                                        <option value="r">Rich</option>
+                                    </select>
+                                    <select class="right" name="checking" id="">
+                                        <option disabled="disabled" selected="selected" value="">Checking Amount</option>
+                                        <option value="lt">Little</option>
+                                        <option value="mo">Moderate</option>
+                                        <option value="ri">Rich</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="input-group">
+                                <div class="rs-select2">
+                                    <select name="purpose" id="">
+                                        <option disabled="disabled" selected="selected" value="">Purpose</option>
+                                        <option value="bu">Business</option>                                            
+                                        <option value="car">Car</option>
+                                        <option value="da">Domestic Appliances</option>
+                                        <option value="edu">Education</option>
+                                        <option value="fe">Furniture/Equipment</option>
+                                        <option value="rtv">Radio/TV</option>
+                                        <option value="rep">Repairs</option>
+                                        <option value="vo">Vacation/Others</option>
+                                    </select>
+                                    <select class="right" name="housing" id="">
+                                        <option disabled="disabled" selected="selected" value="">Choose Housing Type</option>
+                                        <option value="own">Own</option>
+                                        <option value="free">Free</option>
+                                        <option value="rent">Rented</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="input-group">
+                                <div class="rs-select2">
+                                    <input type="text" placeholder="Please Enter Credit Amount"  name="credit" id="">
+                                    <input type="text" class="input_right" placeholder="Please Enter Duration" name="duration" id="">
+                                </div>
+                            </div>
+                        </div>
+                        <input class="btn btn--radius btn--green" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
